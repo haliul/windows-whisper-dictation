@@ -43,14 +43,15 @@ This is a Python script for real-time dictation on Windows. It uses the OpenAI W
 3.  **Install the required dependencies:**
     While in the activated virtual environment, run:
     ```bash
-    pip install openai-whisper sounddevice pyautogui torch torchvision torchaudio scipy pyperclip
+    pip install -r requirements.txt
     ```
-    To use an NVIDIA GPU with CUDA (e.g., CUDA 12.1), it's recommended to install PyTorch separately:
+    The `requirements.txt` file includes PyTorch compiled with CUDA 12.1 support. If you encounter issues or need a different PyTorch version, you can install it manually after installing other requirements:
     ```bash
-    pip uninstall torch torchvision torchaudio -y # Uninstall existing ones, if any
-    pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+    # Example for manual PyTorch installation (if needed)
+    # pip uninstall torch torchvision torchaudio -y
+    # pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121 
+    # (Replace cu121 with your CUDA version if necessary)
     ```
-    Replace `cu121` with your CUDA version if necessary (you can find it using the `nvidia-smi` command).
 
 ## Usage
 
@@ -155,14 +156,15 @@ Happy dictating!
 3.  **Установите необходимые зависимости:**
     Находясь в активированном виртуальном окружении, выполните:
     ```bash
-    pip install openai-whisper sounddevice pyautogui torch torchvision torchaudio scipy pyperclip
+    pip install -r requirements.txt
     ```
-    Для использования GPU NVIDIA с CUDA (например, CUDA 12.1), рекомендуется установить PyTorch отдельно:
+    Файл `requirements.txt` включает PyTorch, скомпилированный с поддержкой CUDA 12.1. Если у вас возникнут проблемы или потребуется другая версия PyTorch, вы можете установить его вручную после установки остальных зависимостей:
     ```bash
-    pip uninstall torch torchvision torchaudio -y # Удалить существующие, если есть
-    pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+    # Пример для ручной установки PyTorch (при необходимости)
+    # pip uninstall torch torchvision torchaudio -y
+    # pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121 
+    # (Замените cu121 на вашу версию CUDA, если необходимо)
     ```
-    Замените `cu121` на вашу версию CUDA, если необходимо (узнать можно командой `nvidia-smi`).
 
 ## Использование
 
